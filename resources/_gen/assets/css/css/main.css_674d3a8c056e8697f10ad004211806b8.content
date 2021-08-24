@@ -31892,6 +31892,17 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Chrome, Safari and Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @import "@fortawesome/fontawesome-free/scss/brands";
 
 @media (min-width: 640px) {
@@ -63143,6 +63154,17 @@ video {
 
   .sm\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Chrome, Safari and Opera */
+
+  .sm\:no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sm\:no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
@@ -94396,6 +94418,17 @@ video {
   .md\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  /* Chrome, Safari and Opera */
+
+  .md\:no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .md\:no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @media (min-width: 1024px) {
@@ -125647,6 +125680,17 @@ video {
 
   .lg\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Chrome, Safari and Opera */
+
+  .lg\:no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lg\:no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
@@ -156900,6 +156944,17 @@ video {
   .xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  /* Chrome, Safari and Opera */
+
+  .xl\:no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .xl\:no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @media (min-width: 1536px) {
@@ -188151,5 +188206,16 @@ video {
 
   .\32xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Chrome, Safari and Opera */
+
+  .\32xl\:no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .\32xl\:no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
