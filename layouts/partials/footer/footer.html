@@ -1,9 +1,12 @@
 <footer class="absolute bottom-0 w-full">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
+        <div class="relative flex items-center justify-between h-16 flex-col">
             <!-- Mobile Footer -->
-            <div class="w-full sm:hidden px-6 flex justify-between">
-                Mobile Footer
+            <div class="w-full sm:hidden px-6 flex flex-col content-center">
+                <div class="mb-1">
+                    <p class="text-xs">Please, consider <b>subscribing</b>:</p>
+                </div>
+                {{ partial "subscribe/subscribe.html" . }}
             </div>
             <!-- Web Footer -->
             <div class="
@@ -11,10 +14,22 @@
                     hidden
                     sm:flex
                     flex-nowrap
-                    justify-between
+                    justify-center
                     content-center
                 ">
-                Web Footer
+                <div>
+                    <div class="mb-1">
+                        <p class="text-xs max-w-sm">Hey, you've reached all the way down here! If you liked the content,
+                            please,
+                            consider
+                            <b>subscribing</b>!
+                        </p>
+                    </div>
+                    {{ partial "subscribe/subscribe.html" . }}
+                </div>
+            </div>
+            <div class="border-t border-gray-300 mt-4 text-xs text-center p-4">
+                All rights reserved. <b>&copy;</b> André de Moraes {{ now.Format "2006" }}
             </div>
         </div>
     </div>
