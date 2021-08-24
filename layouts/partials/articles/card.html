@@ -1,0 +1,13 @@
+<a href="{{ .RelPermalink }}"
+    class="bg-white max-w-sm rounded-sm px-8 hover:shadow-lg transition duration-500 cursor-pointer mb-4">
+    <div class="my-4">
+        <h1 class="text-lg font-bold">{{ .Title }}</h1>
+        <time datetime='{{ dateFormat "2006-01-02 15:04" .Date }}'>
+            <span class="text-sm text-grey-600 font-normal">{{ dateFormat "02 January 2006" .Date }}</span>
+        </time>
+        <img src='/assets/img/featured/{{ .Param "featured-img" }}_thumb.jpg' alt="" class="shadow-lg mt-2 mb-4">
+        <p class="px-1 mt-2 text-sm text-gray-800 text-justify">
+            {{ .Content }}
+        </p>
+    </div>
+</a>
