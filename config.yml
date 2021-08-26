@@ -3,6 +3,21 @@ languageCode: "en-us"
 title: "andre de moraes - template"
 author: "André de Moraes <amancioandre@gmail.com>"
 
+social:
+    instagram: "#"
+    github: "#"
+    linkedin: "#"
+params:
+    address:
+        city: "Victoria"
+        state: "BC"
+        country: "Canada"
+        # Font Awesome Icons
+        icon: "fab fa-canadian-maple-leaf"
+        iconColor: "text-white"
+        color: "red"
+        url: "https://www.victoria.ca/#"
+
 markup:
     tableOfContents:
         endLevel: 2

@@ -25,16 +25,7 @@
                         justify-between
                         content-center
                     ">
-                    <a class="absolute top-0 left-0" href="" target="_blank">
-                        <div class="absolute bg-red-500 transform rotate-45"
-                            style="top: 34px; left: 6px; width: 28px; height: 28px;">
-                        </div>
-                        <div class="w-10 h-12 bg-red-500 text-center text-light text-2xl py-3 transform z-100">
-                            <i class="fab fa-canadian-maple-leaf text-white"></i>
-                        </div>
-                        <span class="absolute top-0 left-10 text-xs w-28 p-2">Currently living in <b>Victoria</b>, BC,
-                            Canada</span>
-                    </a>
+                    {{ partial "location/location.html" . }}
                     <div class="ml-52">
                         <p class="font-mono tracking tighter text-lg font-extrabold">andré de moraes</p>
                     </div>
@@ -58,17 +49,17 @@
                         </ul>
                         <ul class="ml-6 flex flex-none justify-center content-center items-center text-lg">
                             <li class="hover:animate-bounce">
-                                <a href="" target="_blank">
+                                <a href="https://www.linkedin.com/{{ .Site.Social.linkedin }}" target="_blank">
                                     <i class="px-2 fab fa-linkedin-in hover:text-red-500"></i>
                                 </a>
                             </li>
                             <li class="hover:animate-bounce">
-                                <a href="" target="_blank">
+                                <a href="https://www.instagram.com/{{ .Site.Social.instagram }}" target="_blank">
                                     <i class="px-2 fab fa-instagram hover:text-red-500"></i>
                                 </a>
                             </li>
                             <li class="hover:animate-bounce">
-                                <a href="" target="_blank">
+                                <a href="https://www.github.com/{{ .Site.Social.github }}" target="_blank">
                                     <i class="px-2 fab fa-github-alt hover:text-red-500"></i>
                                 </a>
                             </li>
