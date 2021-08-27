@@ -2,7 +2,8 @@ baseURL: "http://example.org/"
 languageCode: "en-us"
 title: "andre de moraes - template"
 author:
-    - "André de Moraes <amancioandre@gmail.com>"
+    name: "André de Moraes"
+    email: "amancioandre@gmail.com"
 
 defaultContentLanguage: "en"
 

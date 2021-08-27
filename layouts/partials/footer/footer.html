@@ -29,7 +29,9 @@
                 </div>
             </div>
             <div class="border-t border-gray-300 mt-4 text-xs text-center p-4">
-                {{ i18n "rights" }} <b>&copy;</b> {{ .Site.Author }} {{ now.Format "2006" }}
+                {{ i18n "rights" }} <b>&copy;</b>
+                {{ .Site.Author.name }},
+                {{ now.Format "2006" }}
             </div>
         </div>
     </div>
