@@ -4,6 +4,10 @@ about:
     other: "About"
 categories:
     other: "Categories"
+select_category:
+    other: "Select a category"
+reading_about:
+    other: "Listing contents about"
 currently_living_in:
     other: "Currently living in"
 subscribe_web:
@@ -16,6 +20,11 @@ email_placeholder:
     other: "yourbest@email.com"
 rights:
     other: "All rights reserved."
+
+or:
+    other: "Or"
+go_back:
+    other: "Go back"
 
 readingTime:
     one: "Aprox. 1 minute ro read"

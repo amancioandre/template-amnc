@@ -4,6 +4,10 @@ about:
     other: "Sobre"
 categories:
     other: "Categorias"
+select_category:
+    other: "Select a category"
+reading_about:
+    other: "Listando conteúdos para"
 currently_living_in:
     other: "Atualmente em"
 subscribe:
@@ -16,6 +20,11 @@ email_placeholder:
     other: "seumelhor@email.com"
 rights:
     other: "Todos os direitos reservados."
+
+or:
+    other: "Ou"
+go_back:
+    other: "Voltar"
 
 readingTime:
     one: "Leia em aprox. 1 minuto"

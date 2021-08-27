@@ -1,5 +1,27 @@
 {{ define "main" }}
-
-{{ partial "articles/list.html" . }}
-
+<section class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 my-6">
+    {{ if eq .Page.Name "Categories" }}
+    <h3 class="text-md mb-4">
+        {{ i18n "select_category" }}:
+    </h3>
+    {{ else }}
+    <span>{{ i18n "reading_about" }}</span>
+    <h3 class="text-lg font-bold uppercase">{{ .Page.Name }}</h3>
+    <span class="text-xs">{{ i18n "or" }}, <a href="javascript:history.back()" class="hover:text-red-500 lowercase">
+            {{ i18n "go_back" }}</a>.</span>
+    {{ end }}
+    {{ $categories := where .Pages ".IsPage" false}}
+    {{ if gt (len $categories) 0 }}
+    <ul class='flex justify-start'>
+        {{ range where .Pages ".IsPage" false }}
+        {{ partial "category/category.html" . }}
+        {{ end }}
+    </ul>
+    {{ end }}
+    <div class="flex flex-wrap content-center justify-around items-stretch mt-4">
+        {{ range where .RegularPages "Type" "in" "posts" }}
+        {{ partial "articles/card.html" . }}
+        {{ end }}
+    </div>
+</section>
 {{ end }}
