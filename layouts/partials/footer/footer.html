@@ -4,7 +4,7 @@
             <!-- Mobile Footer -->
             <div class="w-full sm:hidden px-6 flex flex-col content-center">
                 <div class="mb-1">
-                    <p class="text-xs">Please, consider <b>subscribing</b>:</p>
+                    <p class="text-xs">{{ i18n "subscribe_mobile" }}:</p>
                 </div>
                 {{ partial "subscribe/subscribe.html" . }}
             </div>
@@ -19,10 +19,8 @@
                 ">
                 <div>
                     <div class="mb-1">
-                        <p class="text-xs max-w-sm">Hey, you've reached all the way down here! If you liked the content,
-                            please,
-                            consider
-                            <b>subscribing</b>!
+                        <p class="text-xs max-w-sm">
+                            {{ i18n "subscribe_web" }}
                         </p>
                     </div>
                     {{ partial "subscribe/subscribe.html" . }}

@@ -6,6 +6,10 @@ categories:
     other: "Categories"
 currently_living_in:
     other: "Currently living in"
+subscribe_web:
+    other: "Hey, you've reached all the way down here! If you liked the content, please, consider subscribing!"
+subscribe_mobile:
+    other: "Please, consider subscribing:"
 subscribe:
     other: "Subscribe"
 email_placeholder:

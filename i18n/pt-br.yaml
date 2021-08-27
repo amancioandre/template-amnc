@@ -8,6 +8,10 @@ currently_living_in:
     other: "Atualmente em"
 subscribe:
     other: "Assinar"
+subscribe_web:
+    other: "Opa, você chegou até aqui! Se você gostou do conteúdo, por favor, considere se inscrever!"
+subscribe_mobile:
+    other: "Por favor, considere se inscrever:"
 email_placeholder:
     other: "seumelhor@email.com"
 rights:

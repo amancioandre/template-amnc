@@ -35,8 +35,14 @@
                 {{ partial "navigation/links/social.html" . }}
             </ul>
             <div class="mt-6 text-sm">
-                Please, consider <b>subscribing</b>:
-                {{ partial "subscribe/subscribe.html" . }}
+                <div>
+                    <div class="mb-1">
+                        <p class="text-xs max-w-sm">
+                            {{ i18n "subscribe_mobile" }}
+                        </p>
+                    </div>
+                    {{ partial "subscribe/subscribe.html" . }}
+                </div>
             </div>
         </div>
     </div>
