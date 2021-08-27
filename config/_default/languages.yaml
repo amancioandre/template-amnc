@@ -16,7 +16,7 @@ en:
 pt-br:
     languageName: "Português"
     weight: 2
-    contentDir: "content/pt-BR"
+    contentDir: "content/pt-br"
     menu:
         links:
             - name: "home"
