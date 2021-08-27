@@ -1,0 +1,18 @@
+home:
+    other: "Home"
+about:
+    other: "About"
+categories:
+    other: "Categories"
+currently_living_in:
+    other: "Currently living in"
+subscribe:
+    other: "Subscribe"
+email_placeholder:
+    other: "yourbest@email.com"
+rights:
+    other: "All rights reserved."
+
+readingTime:
+    one: "Aprox. 1 minute ro read"
+    other: "Aprox. {{ .Count }} minutes to read"

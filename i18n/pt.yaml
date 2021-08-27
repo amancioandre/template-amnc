@@ -1,0 +1,18 @@
+home:
+    other: "Início"
+about:
+    other: "Sobre"
+categories:
+    other: "Categorias"
+currently_living_in:
+    other: "Atualmente em"
+subscribe:
+    other: "Assinar"
+email_placeholder:
+    other: "seumelhor@email.com"
+rights:
+    other: "Todos os direitos reservados."
+
+readingTime:
+    one: "Leia em aprox. 1 minuto"
+    other: "Leia em aprox. {{ .Count }} minutos"

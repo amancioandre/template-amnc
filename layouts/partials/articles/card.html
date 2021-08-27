@@ -3,18 +3,12 @@
     <div class="my-4">
         <h1 class="text-lg font-bold my-0">{{ .Title }}</h1>
         <time datetime='{{ dateFormat "2006-01-02 15:04" .Date }}'>
-            <span id="timeago" class="text-xs text-grey-600 font-normal"></span>
-            <br>
-            <span class="text-xs">
-                Aprox. <span class="text-sm text-grey font-bold">{{ .ReadingTime }}</span>
-                {{ if gt .ReadingTime 1 }}
-                minutes
-                {{ else }}
-                minute
-                {{ end }}
-                to read
-            </span>
+            <span id="timeago-{{ .Title }}" class="text-xs text-grey-600 font-normal"></span>
         </time>
+        <br>
+        <span class="text-xs">
+            {{ i18n "readingTime" .ReadingTime }}
+        </span>
         <img src='/assets/img/featured/{{ .Param "featured-img" }}_thumb.jpg' alt="" class="shadow-lg mt-2 mb-4">
         <p class="px-1 mt-2 text-sm text-gray-800 text-justify">
             {{ .Summary }}
@@ -24,5 +18,5 @@
 
 <script>
     dayjs.extend(window.dayjs_plugin_relativeTime)
-    document.getElementById("timeago").innerText = dayjs().to(dayjs("{{ .Date }}"))
+    document.getElementById("timeago-{{ .Title }}").innerText = dayjs().to(dayjs("{{ .Date }}"))
 </script>

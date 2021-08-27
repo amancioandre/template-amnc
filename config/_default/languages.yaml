@@ -5,4 +5,4 @@ en:
 pt-br:
     languageName: "Português"
     weight: 2
-    contentDir: "content/pt-br"
+    contentDir: "content/pt-BR"
