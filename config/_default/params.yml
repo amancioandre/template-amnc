@@ -1,10 +1,9 @@
-params:
-    address:
-        city: "Victoria"
-        state: "BC"
-        country: "Canada"
-        # Font Awesome Icons
-        icon: "fab fa-canadian-maple-leaf"
-        iconColor: "text-white"
-        color: "red"
-        url: "https://www.victoria.ca/#"
+address:
+    city: "Victoria"
+    state: "BC"
+    country: "Canada"
+    # Font Awesome Icons
+    icon: "fab fa-canadian-maple-leaf"
+    iconColor: "text-white"
+    color: "red"
+    url: "https://www.victoria.ca/#"
