@@ -2,7 +2,29 @@ en:
     languageName: "English"
     weight: 1
     contentDir: "content/en"
+    menu:
+        links:
+            - name: "home"
+              url: "/"
+              weight: 1
+            - name: "about"
+              url: "/about"
+              weight: 2
+            - name: "categories"
+              url: "/categories"
+              weight: 3
 pt-br:
     languageName: "Português"
     weight: 2
     contentDir: "content/pt-BR"
+    menu:
+        links:
+            - name: "home"
+              url: "/pt-br"
+              weight: 1
+            - name: "about"
+              url: "/pt-br/sobre"
+              weight: 2
+            - name: "categories"
+              url: "/pt-br/categorias"
+              weight: 3

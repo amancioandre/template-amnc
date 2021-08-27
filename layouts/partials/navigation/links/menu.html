@@ -1,9 +1,6 @@
-<li class="px-2 lowercase hover:text-red-500">
-    <a href="/">{{ i18n "home" }}</a>
+{{- $currentPage := . -}}
+{{ range .Site.Menus.links -}}
+<li class="px-2 lowercase hover:text-red-500 {{ if $currentPage.IsMenuCurrent .Menu . }}text-red-500{{ end }}">
+    <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
 </li>
-<li class="px-2 lowercase hover:text-red-500">
-    <a href="/about">{{ i18n "about" }}</a>
-</li>
-<li class="px-2 lowercase hover:text-red-500">
-    <a href="/categories">{{ i18n "categories" }}</a>
-</li>
+{{- end }}
