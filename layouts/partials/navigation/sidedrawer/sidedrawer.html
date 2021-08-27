@@ -1,0 +1,43 @@
+<aside id="sidedrawer" class="
+    transform
+    absolute
+    top-14
+    left-0
+    bg-white
+    z-50
+    w-full
+    min-h-screen
+    ease-in-out
+    transition-all
+    duration-300
+    -translate-x-full
+    ">
+    <div class="px-8 mt-4">
+        <div class="flex flex-col">
+            <ul class="
+            flex 
+            flex-col 
+            justify-around
+            content-start
+            text-sm
+            h-20
+            ">
+                {{ partial "navigation/links/menu.html" . }}
+            </ul>
+            <ul class="
+                mt-6
+                flex
+                flex-none
+                justify-start
+                content-start
+                text-2xl
+            ">
+                {{ partial "navigation/links/social.html" . }}
+            </ul>
+            <div class="mt-6 text-sm">
+                Please, consider <b>subscribing</b>:
+                {{ partial "subscribe/subscribe.html" . }}
+            </div>
+        </div>
+    </div>
+</aside>

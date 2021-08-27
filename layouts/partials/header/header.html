@@ -1,11 +1,12 @@
 <header>
+    {{ partial "navigation/sidedrawer/sidedrawer.html" . }}
     <nav class="mb-4">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
                 <!-- Mobile Menu -->
                 <div class="w-full sm:hidden px-6 flex justify-between">
                     <!-- Burger Icon -->
-                    <div class="cursor-pointer hover:text-red-500">
+                    <div id="menu-burger" class="cursor-pointer hover:text-red-500">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -69,4 +70,19 @@
             </div>
         </div>
     </nav>
+
+    <script>
+        let isOpen = false
+        const openSideDrawer = () => {
+            const sidedrawer = document.getElementById("sidedrawer")
+            if (!isOpen) {
+                sidedrawer.classList.replace("-translate-x-full", "translate-x-0")
+            } else {
+                sidedrawer.classList.replace("translate-x-0", "-translate-x-full")
+            }
+            isOpen = !isOpen
+        }
+
+        document.getElementById("menu-burger").addEventListener("click", openSideDrawer)
+    </script>
 </header>
