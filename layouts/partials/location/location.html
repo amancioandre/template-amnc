@@ -5,7 +5,8 @@
     <div class="w-10 h-12 bg-{{ .Site.Params.address.color }}-500 text-center text-light text-2xl py-3 transform z-100">
         <i class="{{ .Site.Params.address.icon }} {{ .Site.Params.address.iconColor }}"></i>
     </div>
-    <span class="absolute top-0 left-10 text-xs w-28 p-2">Currently living in <b>{{ .Site.Params.address.city }}</b>,
+    <span class="absolute top-0 left-10 text-xs w-28 p-2">{{ T "currently_living_in" }} <b>
+            {{ .Site.Params.address.city }}</b>,
         {{ .Site.Params.address.state }},
         {{ .Site.Params.address.country }} </span>
 </a>

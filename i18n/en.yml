@@ -1,0 +1,12 @@
+- id: "home"
+  translation: "Home"
+- id: "about"
+  translation: "About"
+- id: "categories"
+  translation: "Categories"
+- id: "currently_living_in"
+  translation: "Currently living in"
+
+readingTime:
+    one: "Aprox. 1 minute ro read"
+    other: "Aprox. {{ .Count }} minutes to read"
