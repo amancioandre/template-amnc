@@ -23,8 +23,8 @@ pt-br:
               url: "/pt-br"
               weight: 1
             - name: "about"
-              url: "/pt-br/sobre"
+              url: "/pt-br/about"
               weight: 2
             - name: "categories"
-              url: "/pt-br/categorias"
+              url: "/pt-br/categories"
               weight: 3
