@@ -1,15 +1,22 @@
 {{ define "main" }}
 <section class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 my-6">
-    {{ if eq .Page.Name "Categories" }}
-    <h3 class="text-md mb-4">
-        {{ i18n "select_category" }}:
+    {{ if or (eq .Page.Name "Categories") (eq .Page.Name "Topics") }}
+    {{ $topics := .Site.Taxonomies.topics }}
+    {{ if gt (len $topics) 0 }}
+    <h3 class="text-xl font-bold mb-4">
+        {{ i18n "topics" }}
     </h3>
-    {{ else }}
-    <span>{{ i18n "reading_about" }}</span>
-    <h3 class="text-lg font-bold uppercase">{{ .Page.Name }}</h3>
-    <span class="text-xs">{{ i18n "or" }}, <a href="javascript:history.back()" class="hover:text-red-500 lowercase">
-            {{ i18n "go_back" }}</a>.</span>
+    <ul class="flex flex-col flex-wrap mb-4 max-h-72">
+        {{ range $key, $topic := $topics }}
+        <li class="">
+            <a href="/topics/{{ $key | urlize }}">{{ $key }}</a>
+        </li>
+        {{ end }}
+    </ul>
     {{ end }}
+    <h3 class="text-xl font-bold mb-4">
+        {{ i18n "categories" }}
+    </h3>
     {{ $categories := where .Pages ".IsPage" false}}
     {{ if gt (len $categories) 0 }}
     <ul class='flex justify-start'>
@@ -17,6 +24,11 @@
         {{ partial "category/category.html" . }}
         {{ end }}
     </ul>
+    {{ end }}
+    {{ else }}
+    <h3 class="text-lg font-bold uppercase">{{ .Page.Name }}</h3>
+    <span class="text-xs">{{ i18n "or" }}, <a href="javascript:history.back()" class="hover:text-red-500 lowercase">
+            {{ i18n "go_back" }}</a>.</span>
     {{ end }}
     <div class="flex flex-wrap content-center justify-around items-stretch mt-4">
         {{ range where .RegularPages "Type" "in" "posts" }}

@@ -6,6 +6,10 @@ categories:
     other: "Categorias"
 select_category:
     other: "Select a category"
+explore:
+    other: "Explorar"
+topics:
+    other: "Tópicos"
 reading_about:
     other: "Listando conteúdos para"
 currently_living_in:

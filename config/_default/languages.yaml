@@ -10,7 +10,7 @@ en:
             - name: "about"
               url: "/about"
               weight: 2
-            - name: "categories"
+            - name: "explore"
               url: "/categories"
               weight: 3
 pt-br:
@@ -25,6 +25,6 @@ pt-br:
             - name: "about"
               url: "/pt-br/about"
               weight: 2
-            - name: "categories"
+            - name: "explore"
               url: "/pt-br/categories"
               weight: 3
