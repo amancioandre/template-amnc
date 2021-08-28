@@ -2,8 +2,12 @@
 
 <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 mb-6 mt-4">
     <div class="flex justify-center">
+        {{ if eq .Page.Name "About" }}
+        {{ partial "about/about.html" . }}
+        {{ else }}
         {{ partial "navigation/sidebar.html" . }}
         {{ partial "articles/article.html" . }}
+        {{ end }}
     </div>
 </div>
 
