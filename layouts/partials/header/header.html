@@ -1,7 +1,10 @@
 <header>
+    <div class="hidden lg:block">
+        {{ partial "flag/flag.html" . }}
+    </div>
     {{ partial "navigation/sidedrawer/sidedrawer.html" . }}
     <nav class="mb-4">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
                 <!-- Mobile Menu -->
                 <div class="w-full sm:hidden px-6 flex justify-between">
@@ -22,28 +25,19 @@
                         w-full
                         hidden
                         sm:flex
+                        flex-row
                         flex-nowrap
-                        justify-between
-                        content-center
-                    ">
-                    {{ partial "location/location.html" . }}
-                    <div class="ml-40">
-                        <p class="font-sans tracking tighter text-3xl">André de Moraes</p>
-                    </div>
-                    <div class="flex justify-between">
-                        <ul class="
-                        flex flex-none
-                        justify-center
-                        content-center
+                        justify-end
                         items-center
-                        text-xs
-                        ">
-                            {{ partial "navigation/links/menu.html" . }}
-                        </ul>
-                        <ul class="ml-6 flex flex-none justify-center content-center items-center text-lg">
-                            {{ partial "navigation/links/social.html" . }}
-                        </ul>
+                    ">
+                    <div class="self-center mr-auto">
+                        <p class="font-sans tracking tighter text-xl">André de Moraes</p>
                     </div>
+                    <ul class=" flex flex-none justify-center content-center items-center text-xs">
+                        {{ partial "navigation/links/menu.html" . }} </ul>
+                    <ul class="ml-6 flex flex-none justify-center content-center text-lg">
+                        {{ partial "navigation/links/social.html" . }}
+                    </ul>
                 </div>
             </div>
         </div>
