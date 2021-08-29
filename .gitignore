@@ -1,9 +1,6 @@
 .vscode/
 node_modules/
 
-/content/**/*
+/content
 /resources
-/resources/**/*
-/resources/_gen/**/*
-/public/
-resources/
+/public
