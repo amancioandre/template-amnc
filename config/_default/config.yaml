@@ -6,6 +6,9 @@ author:
     name: "André de Moraes"
     email: "amancioandre@gmail.com"
 
+permalinks:
+    post: "/:slug"
+
 defaultContentLanguage: "en"
 
 markup:
