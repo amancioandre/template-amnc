@@ -1,6 +1,37 @@
-<aside class="hidden sm:block w-1/5 pr-4 sticky top-0 max-h-64">
-    <h3 class="text-lg font-bold mb-2 mt-5">Topics</h3>
-    <p class="text-xs hover:text-red-500">
-        {{ .TableOfContents }}
-    </p>
+<aside class="hidden sm:block w-1/5 pr-4">
+    <div class="mb-6">
+        About
+    </div>
+    <div class="sticky top-6 max-h-64">
+        {{ if gt (len .TableOfContents) 33 }}
+        <h3 class="text-lg font-bold mb-2">Contents</h3>
+        <p class="text-xs hover:text-red-500">
+            {{ .TableOfContents }}
+        </p>
+        {{ end }}
+        <h3 class="text-lg font-bold mt-6 mb-2">More posts about</h3>
+        <div class="text-xs mb-6">
+            <ul>
+                {{ range .Params.categories }}
+                {{ if eq $.Language.Lang "en" }}
+                <li class="hover:text-red-500">
+                    <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+        <div class="flex flex-col items-end">
+            <span class="my-2 hover:text-red-500 cursor-pointer">{{ partial "icons/like.html" .}}</span>
+            <span id="share" class="my-2 hover:text-red-500 cursor-pointer">{{ partial "icons/share.html" . }}</span>
+        </div>
+    </div>
 </aside>
+
+<script>
+    let likes = 0
+    const shareIcon = document.getElementById("share")
+    shareIcon.addEventListener("click", (e) => {
+        navigator.clipboard.writeText(window.location.href)
+    })
+</script>
