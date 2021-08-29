@@ -1,15 +1,18 @@
 <aside class="hidden sm:block w-1/5 pr-4">
     <div class="mb-6">
-        About
+        <h3 class="text-lg font-bold mb-2">{{ i18n "about" }}</h3>
+        <p class="text-xs">
+            {{ .Language.Params.About }}
+        </p>
     </div>
     <div class="sticky top-6 max-h-64">
         {{ if gt (len .TableOfContents) 33 }}
-        <h3 class="text-lg font-bold mb-2">Contents</h3>
+        <h3 class="text-lg font-bold mb-2">{{ i18n "contents" }}</h3>
         <p class="text-xs hover:text-red-500">
             {{ .TableOfContents }}
         </p>
         {{ end }}
-        <h3 class="text-lg font-bold mt-6 mb-2">More posts about</h3>
+        <h3 class="text-lg font-bold mt-6 mb-2">{{ i18n "more" }}</h3>
         <div class="text-xs mb-6">
             <ul>
                 {{ range .Params.categories }}
@@ -21,17 +24,29 @@
                 {{ end }}
             </ul>
         </div>
-        <div class="flex flex-col items-end">
-            <span class="my-2 hover:text-red-500 cursor-pointer">{{ partial "icons/like.html" .}}</span>
-            <span id="share" class="my-2 hover:text-red-500 cursor-pointer">{{ partial "icons/share.html" . }}</span>
+        <div class="flex justify-end">
+            <span id="likes-button" class="m-2 hover:text-red-500 cursor-pointer flex justify-evenly content-center">
+                <span id="likes" class="mr-2 flex align-middle"></span> {{ partial "icons/like.html" .}}
+            </span>
+            <span id="share" class="m-2 hover:text-red-500 cursor-pointer">{{ partial "icons/share.html" . }}</span>
         </div>
     </div>
 </aside>
 
 <script>
-    let likes = 0
+    let likes = null
     const shareIcon = document.getElementById("share")
     shareIcon.addEventListener("click", (e) => {
         navigator.clipboard.writeText(window.location.href)
+    })
+
+    const likesButton = document.getElementById("likes-button")
+
+    likesButton.addEventListener("click", async () => {
+        if (!likes) {
+            likes = evaluateThreshold(Math.floor(Math.random() * 10000))
+        }
+        const likesSpan = document.getElementById("likes")
+        likesSpan.innerText = likes
     })
 </script>

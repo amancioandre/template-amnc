@@ -13,6 +13,8 @@ en:
             - name: "explore"
               url: "/categories"
               weight: 3
+    params:
+        about: "An example about"
 pt-br:
     languageName: "Português"
     weight: 2
@@ -28,3 +30,5 @@ pt-br:
             - name: "explore"
               url: "/pt-br/categories"
               weight: 3
+    params:
+        about: "An example about"

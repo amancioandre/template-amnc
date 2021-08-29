@@ -2,6 +2,8 @@ home:
     other: "Início"
 about:
     other: "Sobre"
+more:
+    other: "Mais posts sobre"
 categories:
     other: "Categorias"
 select_category:

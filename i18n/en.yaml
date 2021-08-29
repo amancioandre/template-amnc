@@ -2,6 +2,10 @@ home:
     other: "Home"
 about:
     other: "About"
+more:
+    other: "More posts about"
+contents:
+    other: "Contents"
 categories:
     other: "Categories"
 select_category:
