@@ -19,7 +19,27 @@
 }
 
 h1 {
-    @apply text-3xl font-bold my-2;
+    @apply text-3xl font-bold mb-6 mt-2;
+}
+
+h2 {
+    @apply text-2xl font-bold mb-4 mt-2;
+}
+
+h3 {
+    @apply text-xl font-semibold mb-4 mt-2;
+}
+
+figure {
+    @apply mb-6;
+}
+
+figure img {
+    @apply w-full;
+}
+
+figure h4 {
+    @apply mt-2 text-center text-sm text-gray-500;
 }
 
 .highlight {

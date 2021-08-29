@@ -1,8 +1,8 @@
 <article class="sm:w-4/5 pl-4">
     <header>
-        <h1 class="text-4xl font-bold mt-0">{{ .Title }}</h1>
+        <h1 class="text-4xl font-bold mt-0 mb-0">{{ .Title }}</h1>
         <time datetime='{{ dateFormat "2006-01-02 15:04" .Date }}'>
-            <span class="text-sm font-thin text-grey-800">
+            <span class="text-sm text-gray-400">
                 {{ dateFormat "January 2, 2006 15:04" .Date }}
             </span>
         </time>
@@ -15,6 +15,6 @@
             🍻
         </span>
         <br>
-        <span class="text-sm">André</span>
+        <span class="text-sm">{{ .Site.Author.first_name }}</span>
     </div>
 </article>
