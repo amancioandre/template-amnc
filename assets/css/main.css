@@ -42,6 +42,10 @@ figure h4 {
     @apply mt-2 text-center text-sm text-gray-500;
 }
 
+code {
+    @apply bg-gray-800 text-sm text-white rounded p-1;
+}
+
 .highlight {
     @apply text-sm;
 }
