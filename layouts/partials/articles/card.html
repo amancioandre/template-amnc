@@ -9,7 +9,7 @@
         <span class="text-xs">
             {{ i18n "readingTime" .ReadingTime }}
         </span>
-        <img src='/assets/img/featured/{{ .Param "featured-img" }}_thumb.jpg' alt="" class="shadow-lg mt-2 mb-4">
+        <img src='{{ .Param "featured-img" }}' alt="" class="shadow-lg mt-2 mb-4 w-full">
         <p class="px-1 mt-2 text-sm text-gray-800 text-justify">
             {{ .Summary }}
         </p>
