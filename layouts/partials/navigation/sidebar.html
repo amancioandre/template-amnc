@@ -25,28 +25,33 @@
             </ul>
         </div>
         <div class="flex justify-end">
-            <span id="likes-button" class="m-2 hover:text-red-500 cursor-pointer flex justify-evenly content-center">
+            <!-- <span id="likes-button" class="m-2 hover:text-red-500 cursor-pointer flex justify-evenly content-center">
                 <span id="likes" class="mr-2 flex align-middle"></span> {{ partial "icons/like.html" .}}
-            </span>
-            <span id="share" class="m-2 hover:text-red-500 cursor-pointer">{{ partial "icons/share.html" . }}</span>
+            </span> -->
+            <button id="share-button" class="m-2 cursor-pointer">
+                <div id="tooltip" class="opacity-0 text-xs text-gray-500">
+                    copied!
+                </div>
+                <div class="hover:text-red-500 flex justify-center">
+                    {{ partial "icons/share.html" . }}
+                </div>
+            </button>
         </div>
     </div>
 </aside>
 
 <script>
-    let likes = null
-    const shareIcon = document.getElementById("share")
-    shareIcon.addEventListener("click", (e) => {
-        navigator.clipboard.writeText(window.location.href)
-    })
+    const shareButton = document.getElementById("share-button")
+    const tooltip = document.getElementById("tooltip")
 
-    const likesButton = document.getElementById("likes-button")
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(window.location)
+        tooltip.classList.replace("opacity-0", "animate-fade-in-up")
 
-    likesButton.addEventListener("click", async () => {
-        if (!likes) {
-            likes = evaluateThreshold(Math.floor(Math.random() * 10000))
-        }
-        const likesSpan = document.getElementById("likes")
-        likesSpan.innerText = likes
-    })
+        setTimeout(() => {
+            tooltip.classList.replace("animate-fade-in-up", "opacity-0")
+        }, 650)
+    }
+
+    shareButton.addEventListener("click", copyToClipboard)
 </script>
