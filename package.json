@@ -7,6 +7,7 @@
     "scripts": {
         "clean": "rimraf public/",
         "build": "yarn clean && hugo",
+        "build-css": "yarn tailwind build -i assets/css/main.css -o assets/css/styles.css",
         "test": "http-server public/"
     },
     "dependencies": {
