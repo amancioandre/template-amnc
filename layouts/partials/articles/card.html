@@ -1,19 +1,21 @@
 <div class="break-inside">
-    <a href="{{ .RelPermalink }}"
-        class="bg-white max-w-sm rounded-sm px-8 hover:shadow-lg transition duration-500 cursor-pointer m-4">
-        <h1 class="text-lg font-bold my-0">{{ .Title }}</h1>
-        <time datetime='{{ dateFormat "2006-01-02 15:04" .Date }}'>
-            <span id="timeago-{{ .Title }}" class="text-xs text-grey-600 font-normal"></span>
-        </time>
-        <br>
-        <span class="text-xs">
-            {{ i18n "readingTime" .ReadingTime }}
-        </span>
-        <img src='{{ .Param "featured-img" }}' alt="" class="shadow-lg mt-2 mb-4 w-full">
-        <p class="px-1 mt-2 text-sm text-gray-800 text-justify">
-            {{ .Summary }}
-        </p>
-    </a>
+    <div>
+        <a href="{{ .RelPermalink }}"
+            class="bg-white max-w-sm rounded-sm px-8 hover:shadow-lg transition duration-500 cursor-pointer m-4">
+            <h1 class="text-lg font-bold my-0">{{ .Title }}</h1>
+            <time datetime='{{ dateFormat "2006-01-02 15:04" .Date }}'>
+                <span id="timeago-{{ .Title }}" class="text-xs text-grey-600 font-normal"></span>
+            </time>
+            <br>
+            <span class="text-xs">
+                {{ i18n "readingTime" .ReadingTime }}
+            </span>
+            <img src='{{ .Param "featured-img" }}' alt="" class="shadow-lg mt-2 mb-4 w-full">
+            <p class="px-1 mt-2 text-sm text-gray-800 text-justify">
+                {{ .Summary }}
+            </p>
+        </a>
+    </div>
 </div>
 
 <script>
