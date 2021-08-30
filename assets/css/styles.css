@@ -32314,7 +32314,7 @@ video {
        column-count: 2;
 }
 
-.mansory-col-3 {
+.mansonry-col-3 {
   -moz-column-count: 3;
        column-count: 3;
 }
@@ -63688,7 +63688,7 @@ code {
          column-count: 2;
   }
 
-  .sm\:mansory-col-3 {
+  .sm\:mansonry-col-3 {
     -moz-column-count: 3;
          column-count: 3;
   }
@@ -94983,7 +94983,7 @@ code {
          column-count: 2;
   }
 
-  .md\:mansory-col-3 {
+  .md\:mansonry-col-3 {
     -moz-column-count: 3;
          column-count: 3;
   }
@@ -126278,7 +126278,7 @@ code {
          column-count: 2;
   }
 
-  .lg\:mansory-col-3 {
+  .lg\:mansonry-col-3 {
     -moz-column-count: 3;
          column-count: 3;
   }
@@ -157573,7 +157573,7 @@ code {
          column-count: 2;
   }
 
-  .xl\:mansory-col-3 {
+  .xl\:mansonry-col-3 {
     -moz-column-count: 3;
          column-count: 3;
   }
@@ -188868,7 +188868,7 @@ code {
          column-count: 2;
   }
 
-  .\32xl\:mansory-col-3 {
+  .\32xl\:mansonry-col-3 {
     -moz-column-count: 3;
          column-count: 3;
   }
