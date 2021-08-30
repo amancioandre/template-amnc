@@ -17,8 +17,15 @@
         }
 
         .mansonry {
-            column-count: 2;
             column-gap: 1.5em;
+        }
+
+        .mansonry-col-2 {
+            column-count: 2;
+        }
+
+        .mansory-col-3 {
+            column-count: 3;
         }
 
         .break-inside {

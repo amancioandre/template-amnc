@@ -32305,10 +32305,18 @@ video {
 }
 
 .mansonry {
-  -moz-column-count: 2;
-       column-count: 2;
   -moz-column-gap: 1.5em;
        column-gap: 1.5em;
+}
+
+.mansonry-col-2 {
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
+.mansory-col-3 {
+  -moz-column-count: 3;
+       column-count: 3;
 }
 
 .break-inside {
@@ -63671,10 +63679,18 @@ code {
   }
 
   .sm\:mansonry {
-    -moz-column-count: 2;
-         column-count: 2;
     -moz-column-gap: 1.5em;
          column-gap: 1.5em;
+  }
+
+  .sm\:mansonry-col-2 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+
+  .sm\:mansory-col-3 {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 
   .sm\:break-inside {
@@ -94958,10 +94974,18 @@ code {
   }
 
   .md\:mansonry {
-    -moz-column-count: 2;
-         column-count: 2;
     -moz-column-gap: 1.5em;
          column-gap: 1.5em;
+  }
+
+  .md\:mansonry-col-2 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+
+  .md\:mansory-col-3 {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 
   .md\:break-inside {
@@ -126245,10 +126269,18 @@ code {
   }
 
   .lg\:mansonry {
-    -moz-column-count: 2;
-         column-count: 2;
     -moz-column-gap: 1.5em;
          column-gap: 1.5em;
+  }
+
+  .lg\:mansonry-col-2 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+
+  .lg\:mansory-col-3 {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 
   .lg\:break-inside {
@@ -157532,10 +157564,18 @@ code {
   }
 
   .xl\:mansonry {
-    -moz-column-count: 2;
-         column-count: 2;
     -moz-column-gap: 1.5em;
          column-gap: 1.5em;
+  }
+
+  .xl\:mansonry-col-2 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+
+  .xl\:mansory-col-3 {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 
   .xl\:break-inside {
@@ -188819,10 +188859,18 @@ code {
   }
 
   .\32xl\:mansonry {
-    -moz-column-count: 2;
-         column-count: 2;
     -moz-column-gap: 1.5em;
          column-gap: 1.5em;
+  }
+
+  .\32xl\:mansonry-col-2 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+
+  .\32xl\:mansory-col-3 {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 
   .\32xl\:break-inside {
