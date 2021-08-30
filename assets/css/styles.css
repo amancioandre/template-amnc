@@ -32304,6 +32304,18 @@ video {
   /* Firefox */
 }
 
+.mansonry {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
+}
+
+.break-inside {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
 @import "@fortawesome/fontawesome-free/scss/brands";
 
 h1 {
@@ -63657,6 +63669,18 @@ code {
     scrollbar-width: none;
     /* Firefox */
   }
+
+  .sm\:mansonry {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+
+  .sm\:break-inside {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+  }
 }
 
 @media (min-width: 768px) {
@@ -94931,6 +94955,18 @@ code {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+  }
+
+  .md\:mansonry {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+
+  .md\:break-inside {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
   }
 }
 
@@ -126207,6 +126243,18 @@ code {
     scrollbar-width: none;
     /* Firefox */
   }
+
+  .lg\:mansonry {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+
+  .lg\:break-inside {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -157482,6 +157530,18 @@ code {
     scrollbar-width: none;
     /* Firefox */
   }
+
+  .xl\:mansonry {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+
+  .xl\:break-inside {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -188756,5 +188816,17 @@ code {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+  }
+
+  .\32xl\:mansonry {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+
+  .\32xl\:break-inside {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
   }
 }
