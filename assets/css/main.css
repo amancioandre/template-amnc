@@ -38,6 +38,10 @@ a {
     @apply text-red-400 hover:text-red-500;
 }
 
+p {
+    @apply mb-4;
+}
+
 h1 {
     @apply text-3xl font-bold mb-6 mt-2;
 }
