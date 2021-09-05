@@ -32326,6 +32326,20 @@ video {
 
 @import "@fortawesome/fontawesome-free/scss/brands";
 
+a {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+a:hover {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 h1 {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
