@@ -1,6 +1,6 @@
 {{- $currentPage := . -}}
 {{ range .Site.Menus.links -}}
 <li class="px-2 lowercase hover:text-red-500 {{ if $currentPage.IsMenuCurrent .Menu . }}text-red-500{{ end }}">
-    <a href="{{ .URL }}">{{ i18n .Name }}</a>
+    <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
 </li>
 {{- end }}
