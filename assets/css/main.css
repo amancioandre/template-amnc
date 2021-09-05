@@ -34,7 +34,7 @@
     }
 }
 
-a {
+article a {
     @apply text-red-400 hover:text-red-500;
 }
 

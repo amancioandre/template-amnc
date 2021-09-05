@@ -32326,12 +32326,12 @@ video {
 
 @import "@fortawesome/fontawesome-free/scss/brands";
 
-a {
+article a {
   --tw-text-opacity: 1;
   color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
 
-a:hover {
+article a:hover {
   --tw-text-opacity: 1;
   color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
