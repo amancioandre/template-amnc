@@ -71,7 +71,7 @@ code {
 }
 
 .highlight {
-    @apply text-sm;
+    @apply text-sm bg-highlight;
 }
 
 .highlight,
