@@ -17,6 +17,9 @@ module.exports = {
         },
         animation: {
             'fade-in-up': 'fade-in-up 0.5s ease-out'
+        },
+        colors: {
+            'highlight': '#1F2937'
         }
     },
   },
