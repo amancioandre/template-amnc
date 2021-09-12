@@ -10,3 +10,6 @@ address:
 
 mailchimp:
     url: "https://gmail.us5.list-manage.com/subscribe/post?u=7e99b339d496a6c7b1139d4fc&amp;id=6cb1abe378"
+
+googleanalytics:
+    id: ""
