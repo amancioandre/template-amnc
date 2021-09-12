@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
     {{ else }}
     {{ $styles := $styles | minify | fingerprint | postCSS }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
-        rel="preload stylesheet" as="style" />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="" rel="preload stylesheet" as="style" />
     {{ end }}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
