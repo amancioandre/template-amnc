@@ -20,6 +20,9 @@ module.exports = {
         },
         colors: {
             'highlight': '#1F2937'
+        },
+        fontFamily: {
+            'logo': ['Bebas-Neue']
         }
     },
   },

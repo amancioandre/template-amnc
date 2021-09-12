@@ -24,4 +24,6 @@
 
     {{ $api := resources.Get "js/api.js" | minify }}
     <script src="{{ $api.RelPermalink }}"></script>
+
+    {{ partial "integrations/google-analytics" . }}
 </head>
