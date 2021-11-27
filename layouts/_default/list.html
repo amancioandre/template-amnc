@@ -19,7 +19,7 @@
     </h3>
     {{ $categories := where .Pages ".IsPage" false}}
     {{ if gt (len $categories) 0 }}
-    <ul class='flex justify-start'>
+    <ul class='flex flex-wrap items-center justify-start'>
         {{ range where .Pages ".IsPage" false }}
         {{ partial "category/category.html" . }}
         {{ end }}
